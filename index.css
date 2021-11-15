@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainContent {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerDiv {
+  margin: auto;
+  padding: 20px;
+  width: 25%;
+}
+
+.loginDiv {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.945);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.signUpDiv {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.945);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.signupForm {
+}
+
+.loginForm {
+}
+
+.login,
+.signup {
+  padding: 10px;
+  margin: 0 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.signup {
+  margin: 0 0rem;
+  border: 1px solid black;
+}
+
+.form__group {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 0.5em;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: 0;
+  font-size: 1rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.2rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #ffffff, #ffffff);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+button {
+  background-color: rgba(69, 66, 231, 0.781);
+  outline: none;
+  border: 0px;
+  border-radius: 5px;
+  font-weight: 400;
+  /* border: 1px solid white; */
+  padding: 20px 25px;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  margin: 2em 0;
+}
+h1 {
+  color: white;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

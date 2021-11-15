@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="navbar">
+        <a href="" id="heyEmail">Hey email</a>
+        <div class="links">
+          <a href="" class="logout" id="SOut" onclick="signOut()">Logout</a>
+          <a href="" class="addTodo" id="myBtn">Add Todo</a>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div class="todoInnerContent" id="todoModal">
+          <div class="setTodos">
+            <span class="close">&times;</span>
+            <h1>Add Todo</h1>
+            <div class="form__group field">
+              <input
+                type="text"
+                class="form__field"
+                placeholder="email"
+                name="username"
+                id="TName"
+                required
+                autocomplete="off"
+              />
+              <label for="TName" class="form__label">Todo Name</label>
+            </div>
+            <div class="form__group field">
+              <input
+                type="date"
+                class="form__field"
+                placeholder="email"
+                name="username"
+                id="TDate"
+                required
+                autocomplete="off"
+              />
+              <label for="TDate" class="form__label">Date</label>
+            </div>
+            <button id="TAdd">Add</button>
+          </div>
+        </div>
+
+        <div class="todos">
+          <h1>Your To do's!</h1>
+          <div class="todo-container" id="todos">
+            <!-- <div class="todo-element">
+              <h2>Todo</h2>
+              <a href="" class="todo-button">Completed</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="init-firebase.js"></script>
+    <script src="user.js"></script>
+    <script src="db.js"></script>
+  </body>
+</html>
